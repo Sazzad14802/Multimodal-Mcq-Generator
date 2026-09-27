@@ -1,0 +1,64 @@
+# ==============================================================================
+# Security & Secret Configurations
+# NEVER commit your Gemini API Key or local credentials
+# ==============================================================================
+.gemini_config.json
+*.env
+.env
+.env.*
+
+# ==============================================================================
+# Python Bytecode & Cache
+# ==============================================================================
+__pycache__/
+*/__pycache__/
+*/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================================================================
+# Virtual Environments
+# ==============================================================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# IDE & Operating System Artifacts
+# ==============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# ==============================================================================
+# User Dataset Files & Exports
+# (Keep directory structure tracked via .gitkeep, ignore data files)
+# ==============================================================================
+data/*.xlsx
+data/*.csv
+data/*.jsonl
+data/*.html
+data/exports/*
+!data/exports/.gitkeep
+data/images/*
+!data/images/.gitkeep
+
+# Exported ZIP Packages
+*.zip
+data/exports/*.zip
+
+# Scratch & Temporary Testing Directories
+scratch/
+.scratch/
